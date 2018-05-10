@@ -49,7 +49,7 @@ describe('独占任务', () => {
     newTask();
 
     // 未等待第一次执行完成
-    await delay(40);
+    await delay(TASK_DURATION - 10);
 
     // 第二次执行
     newTask();
